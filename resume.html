@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Resume form</title>
+    <script src="resume.js">
+
+    </script>
+  </head>
+  <body>
+    <form class="form" method="post" onsubmit="return validate()">
+      <div class="container">
+      <h1 ><b>Resume Form</b></h1>
+        <table class="table" >
+          <tr>
+            <td><label for="firstname"><b>First Name    </b></label></td>
+            <td><input type="text" placeholder="Enter your first name" name="name" id="fname" ></td>
+            <td><span id="nameError" style="color:red">*</span></td>
+          </tr>
+
+          <tr>
+            <td><label for="lastname"><b>Last Name    </b> </label></td>
+            <td><input type="text" placeholder="Enter your last name" name="lastname" id="lname"></td>
+              <td><span id="lnameError" style="color:red"></span></td>
+          </tr>
+
+          <tr>
+            <td><label for="gender"><b>Gender   </b> </label></td>
+            <td><input type="radio" name="gender" value="male" >male
+            <input type="radio" name="gender" value="female">female</td>
+          </tr>
+
+          <tr>
+            <td><label for="age"><b>Age   </b> </label></td>
+            <td><input type="text" placeholder="Enter your age" name="age" id="age"></td>
+              <td><span id="ageError" style="color:red"></span></td>
+          </tr>
+
+          <tr>
+            <td><label for="email"><b>Email   </b> </label></td>
+            <td><input type="email" placeholder="Enter email" name="email" id="email"></td>
+              <td><span id="emailError" style="color:red"></span></td>
+          </tr>
+
+          <tr>
+            <td><label for="contactno"><b>Contact No  </b> </label></td>
+            <td><input type="text" placeholder="Enter contact No" name="contactno" id="contactno"></td>
+              <td><span id="contactnoError" style="color:red"></span></td>
+          </tr>
+
+          <tr>
+          <td><label for="address"><b>Address   </b></label></td>
+          <td><textarea id="address" name="address" rows="6" cols="50"></textarea></td>
+            <td><span id="addressError" style="color:red"></span></td>
+          </tr>
+
+          <tr>
+            <td><label for="education"><b>Education   </b></label></td>
+            <td><select id="education" name="education">
+              <option value="select">select</option>
+              <option value="10th">10th</option>
+              <option value="12th">12th</option>
+              <option value="diploma">diploma</option>
+              <option value="engineering">Engineering</option>
+              <option value="postgraduate">Post graduation</option>
+            </select></td>
+          </tr>
+
+          <tr>
+            <td><label for="cource"><b>Cources   </b> </label></td>
+            <td><input type="checkbox" name="cource" value="javascript" >javascript
+            <input type="checkbox" name="cource" value="angular.js" >Angular.js
+          <input type="checkbox" name="cource" value="node.js" >Node.js
+        <input type="checkbox" name="cource" value="react" >React</td>
+          </tr>
+
+          <tr>
+          <td><label for="project"><b>Project   </b></label></td>
+          <td><textarea id="project" name="project" rows="3" cols="50"></textarea></td>
+            <td><span id="projectError" style="color:red"></span></td>
+          </tr>
+
+          <tr>
+          <td><label for="hobby"><b>Hobby   </b></label></td>
+          <td><textarea id="hobby" name="hobby" rows="1" cols="40"></textarea></td>
+          </tr>
+
+
+          <tr>
+            <td><label for="photo"><b>Upload your photo</b></label></td>
+            <td><input type="file" name="name"  id="photo"></td>
+              <td><span id="photoError" style="color:red"></span></td>
+          </tr>
+
+          <tr>
+            <td><label for="cetificate"><b>Certificate</b></label></td>
+            <td><input type="file" name="name" id="cetificate"></td>
+              <td>  <span id="certificateError" style="color:red"></span></td>
+          </tr>
+
+          <th>
+            <td><input type="submit" value="submit"></td>
+
+          </th>
+
+        </table>
+
+      </div>
+    </form>
+
+  </body>
+
+</html>

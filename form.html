@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login form</title>
+    <style>
+    body{
+      background-image: url(login.jpg);
+      background-repeat:no-repeat;
+      background-attachment:fixed;
+
+    }
+      table{
+        margin-left: auto;
+        margin-right: auto;
+
+
+      }
+      table,th,td{
+        padding: 10px;
+      }
+      h1{
+        color:white;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+  <form class="" action="index.html" method="post" onsubmit="return validation()">
+    <div class="container">
+      <h1><b>Login form</b></h1>
+        <table>
+          <tr>
+            <td><label for="username"><b>User name</b></label></td>
+            <td><input type="text" name="username" id="uname"></td>
+            <td><span id="name" style="color:red"></span></td>
+          </tr>
+
+          <tr>
+            <td><label for="password"><b>Password</b></label></td>
+            <td><input type="password" name="password" id="pass" required></td>
+            <td><span id="passerror" style="color:red"></span></td>
+          </tr>
+
+          <tr>
+
+            <td><input type="submit" value="submit"></td>
+              <td><input type="reset" value="Reset"></td>
+          </tr>
+        </table>
+
+
+    </div>
+  </form>
+  <script type="text/javascript">
+    var cname=document.getElementById("uname").value;
+    var cpass=document.getElementById("pass").value;
+    function validation()
+    {
+      if(cname=="")
+      {
+        document.getElementById("name").innerHTML="please enter username";
+        return false;
+      }
+      if(cpass=="")
+      {
+        document.getElementById("passerror").innerHTML="please enter password";
+        return false;
+      }
+      return true;
+    }
+  </script>
+  </body>
+
+</html>
